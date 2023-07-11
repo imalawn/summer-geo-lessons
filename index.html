@@ -128,7 +128,7 @@ footer {
     text-align: center;
 }
 
-.navbar {
+.submit {
     list-style-type: none;
     display: inline-block;
     padding: 0;
@@ -137,12 +137,12 @@ footer {
     margin-bottom: 10px;
 }
 
-.navbar li {
+.submit li {
     display: inline;
     margin: 0;
 }
 
-.navbar li a {
+.submit li a {
     text-decoration: none;
 }
 
@@ -162,6 +162,9 @@ li .button {
     border-style: solid;
     border-color: #3a3a3a;
     border-width: 2px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
 }
 
 li .button:hover {
@@ -192,7 +195,7 @@ li .button:hover {
         <label class="text" for="input2">Lesson:</label>
         <input class="field" placeholder="#" type="number" min="1" max="6" id="input2" name="input2" required onkeypress="handleKeyPress(event)"><br><br>
         
-        <ul class="navbar"><li><input class="navbar button" type="button" value="Go" onclick="redirect()"></li></ul>
+        <ul class="submit"><li><input class="submit button" type="button" value="Go" onclick="redirect()"></li></ul>
     </form>
     
     <script>
