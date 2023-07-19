@@ -3,7 +3,7 @@ An easy-to-use site that allows a student to access the FCPS Summer Honors Geome
 ## Setup
 ### Local File (recommended)
 Using this page as a local file will generally be more reliable, and it will also allow you to tweak it to your preference.
-1. Download the `lessons.html` file either by cloning it or downloading it from the releases tab. Alternatively, you can download the `index.html` and `style.css` separately for more customization.
+1. Download the `lessons.html` file either by cloning it or downloading it from the releases tab.
 2. Double click the downloaded `lessons.html` or `index.html` file on your computer.
 3. Bookmark the page that opens up when you open the file for quick, easy access.
 ### Public Website (not currently available)
