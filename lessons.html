@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Lesson Selector</title>
-    <script>
-        function redirect() {
-            var input1 = document.getElementById('input1').value;
-            var input2 = document.getElementById('input2').value;
-            var url = "https://onlinecampus.fcps.edu/media2/math/GeometryHonors/GeometryHN_Unit" + encodeURIComponent(input1) + "_Lesson0" + encodeURIComponent(input2) + "/story.html";
-            window.location.href = url;
-        }
-
-        function handleKeyPress(event) {
-            if (event.keyCode === 13) {
-                redirect();
-            }
-        }
-
-        window.onload = function() {
-            document.getElementById('input1').focus();
-        };
-    </script>
+<title>Input Fields Redirect</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
@@ -127,7 +109,7 @@ footer {
     text-align: center;
 }
 
-.submit {
+.navbar {
     list-style-type: none;
     display: inline-block;
     padding: 0;
@@ -136,12 +118,12 @@ footer {
     margin-bottom: 10px;
 }
 
-.submit li {
+.navbar li {
     display: inline;
     margin: 0;
 }
 
-.submit li a {
+.navbar li a {
     text-decoration: none;
 }
 
@@ -181,7 +163,7 @@ li .button:hover {
     font-weight: 400;
     font-size: 16px;
 }
-</style>
+  </style>
 </head>
 <body>
     <h1 class="title">FCPS Summer Honors Geometry Lessons</h1>
@@ -190,17 +172,34 @@ li .button:hover {
     <form id="main">
         <label class="text" for="input1">Unit:</label>
         <input class="field" placeholder="##" type="number" min="1" max="14" id="input1" name="input1" required onkeypress="handleKeyPress(event)"><br><br>
-        
         <label class="text" for="input2">Lesson:</label>
         <input class="field" placeholder="#" type="number" min="1" max="6" id="input2" name="input2" required onkeypress="handleKeyPress(event)"><br><br>
-        
-        <ul class="submit"><li><input class="submit button" type="button" value="Go" onclick="redirect()"></li></ul>
+        <ul class="navbar"><li><input class="navbar button" type="button" value="Go" onclick="redirect()"></li></ul>
     </form>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('input1').focus();
         });
-    </script>
+
+    input1.addEventListener('input', () => {
+      if (input1.value.length === 2) {
+        input2.focus();
+      }
+    });
+
+    function redirect() {
+            var input1 = document.getElementById('input1').value;
+            var input2 = document.getElementById('input2').value;
+            var url = "https://onlinecampus.fcps.edu/media2/math/GeometryHonors/GeometryHN_Unit" + encodeURIComponent(input1) + "_Lesson0" + encodeURIComponent(input2) + "/story.html";
+            window.location.href = url;
+        }
+
+        function handleKeyPress(event) {
+            if (event.keyCode === 13) {
+                redirect();
+            }
+        }
+  </script>
 </body>
 </html>
