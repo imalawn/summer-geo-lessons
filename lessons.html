@@ -3,167 +3,174 @@
 <head>
 <title>Lesson Selector</title>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-    
-    h1 {
-        width: 80%;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    
-    p {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    
-    footer {
-        font-size: 14px;
-        font-family: 'Inter';
-        font-weight: 500;
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 20px;
-    }
-    
-    .title {
-        font-family: 'Poppins';
-        font-weight: 700;
-        font-size: 48px;
-        margin-top: 25px;
-    }
-    
-    .body {
-        max-width: 90%;
-        width: 725px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .heading {
-        font-family: 'Poppins';
-        font-weight: 600;
-        font-size: 30px;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-    
-    .text {
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-    
-    .fullbar {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        width: 100%;
-        height: 1px;
-        border: none;
-        background-color: dimgray;
-    }
-    
-    .titlebar {
-        height: 5px;
-        width: 200px;
-        border: none;
-        background-color: black;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-    
-    .image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        width: 600px;
-        max-width: 90%;
-        border-radius: 15px;
-    }
-    
-    .link {
-        color: blue;
-        text-decoration: none;
-    }
-    
-    .link:hover {
-        text-decoration: underline;
-    }
-    
-    .link:active {
-        color: black;
-    }
-    
-    #main {
-        text-align: center;
-    }
-    
-    .navbar {
-        list-style-type: none;
-        display: inline-block;
-        padding: 0;
-        overflow: hidden;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    
-    .navbar li {
-        display: inline;
-        margin: 0;
-    }
-    
-    .navbar li a {
-        text-decoration: none;
-    }
-    
-    li {
-        font-family: 'Inter';
-        float: none;
-    }
-    
-    li .button {
-        display: inline-block;
-        color: #3a3a3a;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        border-radius: 5px;
-        margin: 2px;
-        border-style: solid;
-        border-color: #3a3a3a;
-        border-width: 2px;
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 16px;
-    }
-    
-    li .button:hover {
-        background-color: #413f3f;
-        color: azure;
-        transition: 0.3s;
-        cursor: pointer;
-    }
-    
-    .field {
-        margin-left: 5px;
-        width: 50px;
-        padding: 7px;
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 16px;
-    }
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+h1 {
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+footer {
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 48px;
+    margin-top: 25px;
+}
+
+.body {
+    max-width: 90%;
+    width: 725px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heading {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.fullbar {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: dimgray;
+}
+
+.titlebar {
+    height: 5px;
+    width: 200px;
+    border: none;
+    background-color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 600px;
+    max-width: 90%;
+    border-radius: 15px;
+}
+
+.link {
+    color: blue;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link:active {
+    color: black;
+}
+
+#main {
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar li {
+    display: inline;
+    margin: 0;
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+li {
+    font-family: 'Inter';
+    float: none;
+}
+
+li .button {
+    display: inline-block;
+    color: #3a3a3a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 2px;
+    border-style: solid;
+    border-color: #3a3a3a;
+    border-width: 2px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    background-color: azure;
+}
+
+li .button:hover {
+    background-color: #413f3f;
+    color: azure;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+li .button:active {
+    transition: 0.2s;
+    background-color: #cccccc;
+    color: #3a3a3a;
+}
+
+.field {
+    margin-left: 5px;
+    width: 50px;
+    padding: 7px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+  </style>
 </head>
 <body>
     <h1 class="title">FCPS Summer Honors Geometry Lessons</h1>
@@ -171,9 +178,9 @@
     <p class="text" id="main">This page will redirect you to your desired lesson based on your unit and lesson number.</p>
     <form id="main">
         <label class="text" for="input1">Unit:</label>
-        <input class="field" placeholder="##" type="number" min="1" max="14" id="input1" name="input1" required onkeypress="handleKeyPress(event)"><br><br>
+        <input class="field" placeholder="##" maxlength="2" type="number" min="1" max="14" id="input1" name="input1" required onkeypress="handleKeyPress(event)"><br><br>
         <label class="text" for="input2">Lesson:</label>
-        <input class="field" placeholder="#" type="number" min="1" max="6" id="input2" name="input2" required onkeypress="handleKeyPress(event)"><br><br>
+        <input class="field" placeholder="#" maxlength="1" type="number" min="1" max="6" id="input2" name="input2" required onkeypress="handleKeyPress(event)"><br><br>
         <ul class="navbar"><li><input class="navbar button" type="button" value="Go" onclick="redirect()"></li></ul>
     </form>
 
@@ -197,17 +204,26 @@
     });
 
     function redirect() {
-            var input1 = document.getElementById('input1').value;
-            var input2 = document.getElementById('input2').value;
-            var url = "https://onlinecampus.fcps.edu/media2/math/GeometryHonors/GeometryHN_Unit" + encodeURIComponent(input1) + "_Lesson0" + encodeURIComponent(input2) + "/story.html";
-            window.location.href = url;
+        const value1 = input1.value;
+        const value2 = input2.value;
+        if (value1 === '13') {
+            window.location.href = `https://onlinecampus.fcps.edu/media2/math/GeometryHonors/GeometryHN_Unit13/story.html`;
+        } else if (((value1 === '01' || value1 === '03' || value1 === '04' || value1 === '05' || value1 === '06' || value1 === '09' || value1 === '11' || value1 === '14') && (value2 > '3')) || (value1 === '12' && value2 > '4') || ((value1 === '07' || value1 ==='08') && (value2 > '5')) || (value1 === '10' && value2 > '6')) {
+            alert("Invalid entries.");
+        } else if (value1 > '14' || value1 < '01' || value2 > '6' || value2 < '1') {
+            alert("Invalid entries.");
+        } else if (value1 && value2) {
+            window.location.href = `https://onlinecampus.fcps.edu/media2/math/GeometryHonors/GeometryHN_Unit${value1}_Lesson0${value2}/story.html`;
+        } else {
+            alert("Please fill in both fields.");
         }
+    }
 
-        function handleKeyPress(event) {
-            if (event.keyCode === 13) {
-                redirect();
-            }
+    function handleKeyPress(event) {
+        if (event.keyCode === 13) {
+            redirect();
         }
+    }
   </script>
 </body>
 </html>
