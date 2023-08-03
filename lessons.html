@@ -182,6 +182,7 @@ li .button:active {
         <label class="text" for="input2">Lesson:</label>
         <input class="field" placeholder="#" maxlength="1" type="number" min="1" max="6" id="input2" name="input2" required onkeypress="handleKeyPress(event)"><br><br>
         <ul class="navbar"><li><input class="navbar button" type="button" value="Go" onclick="redirect()"></li></ul>
+        <ul class="navbar"><li><input class="navbar button" type="button" value="Textbook" onclick="textbook()"></li></ul>
     </form>
 
   <script>
@@ -206,12 +207,14 @@ li .button:active {
     function redirect() {
         const value1 = input1.value;
         const value2 = input2.value;
-        if (value1 === '13') {
-            window.location.href = `https://onlinecampus.fcps.edu/media2/math/GeometryHonors/GeometryHN_Unit13/story.html`;
-        } else if (((value1 === '01' || value1 === '03' || value1 === '04' || value1 === '05' || value1 === '06' || value1 === '09' || value1 === '11' || value1 === '14') && (value2 > '3')) || (value1 === '12' && value2 > '4') || ((value1 === '07' || value1 ==='08') && (value2 > '5')) || (value1 === '10' && value2 > '6')) {
+        if (((value1 === '01' || value1 === '03' || value1 === '04' || value1 === '05' || value1 === '06' || value1 === '09' || value1 === '11' || value1 === '14') && (value2 > '3')) || (value1 === '12' && value2 > '4') || ((value1 === '07' || value1 ==='08') && (value2 > '5')) || (value1 === '10' && value2 > '6')) {
             alert("Invalid entries.");
         } else if (value1 > '14' || value1 < '01' || value2 > '6' || value2 < '1') {
             alert("Invalid entries.");
+        } else if (value1 === '13') {
+            window.location.href = `https://onlinecampus.fcps.edu/media2/math/GeometryHonors/GeometryHN_Unit13/story.html`;
+        } else if (value1 === '14') {
+            window.location.href = `https://onlinecampus.fcps.edu/media2/math/GeometryHonors/GeometryHN_NEWUnit14_Lesson0${value2}/story.html`;
         } else if (value1 && value2) {
             window.location.href = `https://onlinecampus.fcps.edu/media2/math/GeometryHonors/GeometryHN_Unit${value1}_Lesson0${value2}/story.html`;
         } else {
@@ -222,6 +225,15 @@ li .button:active {
     function handleKeyPress(event) {
         if (event.keyCode === 13) {
             redirect();
+        }
+    }
+
+    function textbook() {
+        if (confirm("The Mathspace textbook may require you to sign in.\nNote: The eBook and the Student Textbook have essentially the same material, but they are organized differently. You will be sent to the eBook, but there is a button there that allows you to switch to the Student Textbook.") === true) {
+            window.location.href = `https://mathspace.co/ebook/syllabus/666`;
+        } else {
+            input1.focus();
+            return;
         }
     }
   </script>
