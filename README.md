@@ -6,9 +6,8 @@ Using this page as a local file will generally be more reliable, and it will als
 1. Download the `lessons.html` file either by cloning it or downloading it from the releases tab.
 2. Double click the downloaded `lessons.html` or `index.html` file on your computer.
 3. Bookmark the page that opens up when you open the file for quick, easy access.
-### Public Website (not currently available)
-This page will simply be a website that you can open up and bookmark for a no-download, quick way to access your lesson material.
-If it is released, it would either have its own domain (note that Freenom is down currently) or use the GitHub Pages URL (https://leckiqie.github.io/summer-geo-lessons).
+### Public Website
+This page is simply a website that you can open up and bookmark for a no-download, quick way to access your lesson material. Because Freenom doesn't work, this page can be accessed using the link imalawn.github.io/summer-geo-lessons.
 ### Self-Hosting
 Since this is a static webpage, you can self-host it for free so other people can access it.
 1. Fork this repository or download it.
