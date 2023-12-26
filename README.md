@@ -3,8 +3,8 @@ An easy-to-use site that allows a student to access the FCPS Summer Honors Geome
 ## Setup
 ### Local File (recommended)
 Using this page as a local file will generally be more reliable, and it will also allow you to tweak it to your preference.
-1. Download the `lessons.html` file either by cloning it or downloading it from the releases tab.
-2. Double click the downloaded `lessons.html` or `index.html` file on your computer.
+1. Download the `index.html` file either by cloning it or downloading it from the releases tab.
+2. Double click the downloaded `index.html` file on your computer.
 3. Bookmark the page that opens up when you open the file for quick, easy access.
 ### Public Website
 This page is simply a website that you can open up and bookmark for a no-download, quick way to access your lesson material. This page can be accessed using the link: [imalawn.github.io/summer-geo-lessons](https://imalawn.github.io/summer-geo-lessons).
