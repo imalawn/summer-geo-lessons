@@ -205,8 +205,8 @@ li .button:active {
     });
 
     function redirect() {
-        const value1 = input1.value.parseInt();
-        const value2 = input2.value;
+        const value1 = parseInt(input1.value);
+        const value2 = parseInt(input2.value);
         if (((value1 === 1 || value1 === 3 || value1 === 4 || value1 === 5 || value1 === 6 || value1 === 9 || value1 === 11 || value1 === 14) && (value2 > 3)) || (value1 === 12 && value2 > 4) || ((value1 === 7 || value1 === 8) && (value2 > 5)) || (value1 === 10 && value2 > 6)) {
             alert("Invalid entries.");
         } else if (value1 > 14 || value1 < 1 || value2 > 6 || value2 < 1) {
